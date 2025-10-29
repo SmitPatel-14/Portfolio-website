@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Smit Patel | Frontend & ML Developer</title>
+    <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <h1 class="logo">Smit Patel</h1>
+            <div class="nav-right">
+                <ul class="nav-links">
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#skills">Skills</a></li>
+                    <li><a href="#projects">Projects</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+                <button id="theme-toggle" class="theme-toggle" aria-label="Toggle dark/light theme">☀️</button>
+            </div>
+        </nav>
+    </header>
+
+    <section id="home" class="section hero">
+        <div class="container hero-content">
+            <div class="hero-text">
+                <p class="greeting">Hello, I'm</p>
+                <h1>Smit Patel</h1>
+                <h2>Frontend Developer | AI/ML Enthusiast</h2>
+                <div class="hero-actions">
+                    <a class="btn primary" href="assets/Smit_Patel_Resume.pdf" target="_blank">View Resume</a>
+                    <a class="btn ghost" href="#projects">Explore Projects &rarr;</a>
+                </div>
+            </div>
+            <div class="profile-card">
+                 <img src="assets/profile.jpg" alt="Smit Patel" class="profile-img" />
+            </div>
+        </div>
+    </section>
+
+    <section id="about" class="section">
+        <div class="container">
+            <h2 class="section-title">About Me</h2>
+            <div class="about-grid">
+                <div class="about-text">
+                    <p>
+                        I am currently pursuing a <b>B.E. in Computer Science</b> (CGPA 7.37) at Government Engineering College, Bharuch (2022–2026). I thrive on blending aesthetic design with powerful functionality, tackling challenges in both web development and machine learning.
+                    </p>
+                    <p>
+                        My experience includes building responsive web applications and implementing sophisticated deep learning models for real-world problems, such as my <b>Household Waste Classification</b> project which achieved <b>94.17% test accuracy</b>.
+                    </p>
+                </div>
+                <div class="achievement-card">
+                    <h3>Key Achievements</h3>
+                    <ul class="achievement-list">
+                        <li>Selected for <b>Smart India Hackathon 2025</b> for an AI-based Crop Pest/Disease Detection system.</li>
+                        <li>Qualified for National-level IEEE Signal Image Processing Competition.</li>
+                        <li>Represented college at <b>GTU Ventures Ideathon 2025</b> for sustainable AI-driven solutions.</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="skills" class="section light-bg">
+        <div class="container">
+            <h2 class="section-title">Technical Skills</h2>
+            <div class="skills-container">
+                <div class="skills-group">
+                    <h3>Frontend & Databases</h3>
+                    <div class="skills-grid">
+                        <span>HTML</span>
+                        <span>CSS</span>
+                        <span>JavaScript</span>
+                        <span>MySQL</span>
+                    </div>
+                </div>
+                <div class="skills-group">
+                    <h3>AI / Machine Learning</h3>
+                    <div class="skills-grid">
+                        <span>Python</span>
+                        <span>TensorFlow / Keras</span>
+                        <span>Scikit-learn</span>
+                        <span>NumPy / Pandas</span>
+                    </div>
+                </div>
+                <div class="skills-group">
+                    <h3>Development & Tools</h3>
+                    <div class="skills-grid">
+                        <span>C/C++</span>
+                        <span>Java</span>
+                        <span>Git & GitHub</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="projects" class="section">
+        <div class="container">
+            <h2 class="section-title">Key Projects</h2>
+            <div class="project-grid">
+                
+                <div class="project-card" data-project="waste-classification">
+                    <img src="assets/project-waste.png" alt="Waste Classification" />
+                    <div class="project-info">
+                        <h3>Household Waste Classification</h3>
+                    </div>
+                </div>
+
+                <div class="project-card" data-project="house-prediction">
+                    <img src="assets/project-housing.jpg" alt="House Price Prediction" />
+                    <div class="project-info">
+                        <h3>House Price Prediction</h3>
+                    </div>
+                </div>
+                
+                <div class="project-card" data-project="todo-list">
+                    <img src="assets/project-todo.png" alt="To-Do App" />
+                    <div class="project-info">
+                        <h3>Interactive To-Do List</h3>
+                    </div>
+                </div>
+
+                <div class="project-card" data-project="calculator">
+                    <img src="assets/project-calculator.png" alt="Calculator" />
+                    <div class="project-info">
+                        <h3>Calculator App</h3>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <div id="project-detail-modal" class="modal">
+        <div class="modal-content">
+            <span class="close-btn">&times;</span>
+            <h3 id="modal-title"></h3>
+            <p id="modal-description"></p>
+            <div id="modal-techstack" class="modal-techstack"></div>
+            <a id="modal-github-link" href="#" target="_blank" class="btn primary github-btn">
+                <img src="assets/github.svg" alt="GitHub Icon" class="github-icon" /> View on GitHub
+            </a>
+        </div>
+    </div>
+
+    <section id="contact" class="section light-bg">
+        <div class="container contact-container">
+            <h2 class="section-title">Get In Touch</h2>
+            <p>I am actively looking for opportunities in Frontend Development or AI/ML. Feel free to connect!</p>
+            <div class="social-icons">
+                <a href="https://www.linkedin.com/in/dte-gecbh-com-smit-patel/" target="_blank">
+                    <img src="assets/linkedin.svg" alt="LinkedIn" />
+                </a>
+                <a href="https://github.com/SmitPatel-14" target="_blank">
+                    <img src="assets/github.svg" alt="GitHub" />
+                </a>
+                <p>Email: sp3896508@gmail.com</p>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <p>© 2025 Smit Patel. Built with HTML, CSS, and JS.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
